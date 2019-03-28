@@ -10,7 +10,6 @@ $("#search-button").click(function(){
         method: "GET",
         success: function(response){
             var randomIndex = Math.floor(Math.random() * response.data.length);
-            console.log("hi");
             $(".gallery").append("<img src=" + response.data[randomIndex].images.original.url + "/>");
       }
     });
