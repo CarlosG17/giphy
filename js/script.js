@@ -4,7 +4,7 @@
 /* global $ */
 
 $("#search-button").click(function(){
-    var requested_url= "https://api.giphy.com/v1/gifs/search?q="+ $("input").val()+"&rating=pg&api_key=dc6zaTOxFJmzC";
+    var requested_url= "https://api.giphy.com/v1/gifs/search?q="+ $("input").val()+"&rating=pg&api_key=dc6zaTOxFJmzC"
     $.ajax({
         url: requested_url,
         method: "GET",
